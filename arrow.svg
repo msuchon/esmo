@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="arrow.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3 (0e150ed, 2023-07-21)"
+   sodipodi:docname="rysunek.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.6819304"
+     inkscape:cx="243.47024"
+     inkscape:cy="498.23702"
+     inkscape:window-width="1920"
+     inkscape:window-height="949"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect1"
+       style="fill:#f9f9f9;stroke-width:0.264583"
+       d="M 90.059619 70.514042 C 88.490932 70.514042 87.228267 71.776707 87.228267 73.345394 L 87.228267 162.97868 L 62.925875 137.38335 C 62.085776 136.49856 60.697159 136.46263 59.81237 137.30273 C 58.92758 138.14283 58.891655 139.53145 59.731755 140.41624 L 88.327425 170.53326 C 89.072538 171.31801 90.247183 171.43112 91.121053 170.86141 C 91.250658 170.78124 91.374751 170.68846 91.489506 170.57874 L 121.50524 141.87713 C 122.38707 141.03392 122.41822 139.64545 121.57501 138.76362 C 120.7318 137.88179 119.34281 137.85065 118.46099 138.69386 L 92.890971 163.14405 L 92.890971 73.345394 C 92.890971 71.776707 91.628306 70.514042 90.059619 70.514042 z " />
+  </g>
+</svg>
