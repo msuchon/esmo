@@ -97,11 +97,16 @@ include('functions.php');
         <div class="parent2" id="about">
             <div class="opis">
             <div class="a1">O turnieju</div>
-                <p>Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit. Donec vitae lectus tempus mauris 
-                blandit viverra ut a ligula. Duis aliquet at mauris non sollicitudin. 
-                Quisque molestie tempor enim, fringilla bibendum orci feugiat sit amet. 
-                Curabitur rhoncus commodo tortor sit amet rutrum.</p>
+                <div id="oTurnieju">
+                <h4>Witajcie na eSportowych Mistrzostwach Olsztyna!</h4>
+                <p>Cieszymy się, że jesteście z nami na tym ekscytującym wydarzeniu e-sportowym, które organizowane jest przez uczniów, dla uczniów. To nie tylko pierwszy turniej w grze CS2 w naszym regionie, ale także świetna okazja do rywalizacji, zabawy i tworzenia niezapomnianych chwil.</p>
+                <h4>O nas</h4>
+                <p>E-sport zyskuje coraz większą popularność na całym świecie, a my jesteśmy dumni, że możemy być częścią tej fascynującej społeczności. Nasze mistrzostwa to nie tylko okazja do rywalizacji, ale także możliwość spotkania innych pasjonatów e-sportu oraz podzielenia się swoimi umiejętnościami i doświadczeniem.</p>
+                <h4>Rejestracja</h4>
+                <p>Jeśli jesteście gotowi do podjęcia wyzwania i chcecie wziąć udział w eSportowych Mistrzostwach Olsztyna, nie czekajcie! Rejestracja jest otwarta, a liczba miejsc ograniczona. Zarejestrujcie się klikając przycisk poniżej i przygotujcie się do rywalizacji na najwyższym poziomie.</p>
+                </div>
+
+                <button type="button" id="oTurniejuBtn" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#aboutInfo"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>&nbsp;&nbsp;Przeczytaj o Turnieju</button>
                 
                 
                 <!-- DO WYMUSZENIA WCZYTANIA PRELOADERA
@@ -209,6 +214,32 @@ include('functions.php');
     </div>
   </div>
 </div>
+
+
+<div class="modal fade modal-lg" id="aboutInfo" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="aboutInfoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" style="font-size: 2em !important;" id="aboutInfoLabel">O TURNIEJU</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+      <h4><center>Witajcie na eSportowych Mistrzostwach Olsztyna!</center></h4>
+                <p>Cieszymy się, że jesteście z nami na tym ekscytującym wydarzeniu e-sportowym, które organizowane jest przez uczniów, dla uczniów. To nie tylko pierwszy turniej w grze CS2 w naszym regionie, ale także świetna okazja do rywalizacji, zabawy i tworzenia niezapomnianych chwil.</p>
+                <h4>O nas</h4>
+                <p>E-sport zyskuje coraz większą popularność na całym świecie, a my jesteśmy dumni, że możemy być częścią tej fascynującej społeczności. Nasze mistrzostwa to nie tylko okazja do rywalizacji, ale także możliwość spotkania innych pasjonatów e-sportu oraz podzielenia się swoimi umiejętnościami i doświadczeniem.</p>
+                <h4>Rejestracja</h4>
+                <p>Jeśli jesteście gotowi do podjęcia wyzwania i chcecie wziąć udział w eSportowych Mistrzostwach Olsztyna, nie czekajcie! Rejestracja jest otwarta, a liczba miejsc ograniczona. Zarejestrujcie się klikając przycisk poniżej i przygotujcie się do rywalizacji na najwyższym poziomie.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" style="margin: 0 auto;" data-bs-dismiss="modal">Zamknij</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script  src="js/scrollToTop.js"></script>
