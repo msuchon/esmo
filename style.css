@@ -91,14 +91,6 @@ section:nth-of-type(even) {
         padding: 0;
     }
 
-    #preloader
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
     @keyframes pulseInfinite {
         0%, 100% {
           transform: scale(1);
@@ -113,9 +105,17 @@ section:nth-of-type(even) {
       {
         width: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: center !important;
         text-transform: uppercase;
+        position: fixed;
+        top: 0;
+        z-index: 50;
+        background-color: #0f203c;
+        max-height: 11vh;
+        align-items: center !important;
+        padding-bottom: 0.1em;
+        box-shadow: 0px 1px 5px #050d1c;
+        margin: auto;
       }
 
       nav.mainNav .nav-link
@@ -127,6 +127,8 @@ section:nth-of-type(even) {
         padding-left: 0.5em !important;
         padding-right: 0.5em !important;
         cursor: pointer;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
       }
 
       nav.mainNav .nav-link:hover
@@ -137,11 +139,6 @@ section:nth-of-type(even) {
         background-image: linear-gradient(to top,rgba(16, 46, 96,0.7) , rgb(4, 16, 36), rgb(4, 16, 36));
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-      }
-
-      nav.mainNav ul
-      {
-        padding-bottom: 2em;
       }
 
       .menuBtn 
@@ -197,47 +194,61 @@ section:nth-of-type(even) {
 
 /* O TURNIEJU */
 .parent2 {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
     }
     
     /* napis */
     .a1 { 
         box-sizing: border-box;
-        grid-area: 2 / 2 / 3 / 4; 
-        font-size: 5em;
+        font-size: 3em;
         padding: 1rem;
         text-align: center;
     }
 
     /* opis */
     .opis { 
-        grid-area: 3 / 2 / 6 / 4;
-        box-sizing: border-box;
-        text-align: center;
-        padding: 1rem;
-        font-size: 2em;
+          box-sizing: border-box;
+          text-align: center;
+          padding: 1rem;
+          font-size: 2em;
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+    }
+    .secondpart_about
+    {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+    }
+    /* zdjecie oga i sql*/
+    .logos:nth-of-type(1) { 
+      box-sizing: border-box;
+      width: 50%;
+      text-align: center;
+      margin-bottom: -10em;
     }
 
-    /* zdjecie oga i sql*/
-    .logo1 { 
-        box-sizing: border-box;
-        grid-area: 2 / 5 / 5 / 7; 
-        text-align: center;
+    .logos:nth-of-type(2) { 
+      box-sizing: border-box;
+      width: 50%;
+      text-align: center;
     }
-    .logo2 { 
-        box-sizing: border-box;
-        grid-area: 3 / 5 / 5 / 7; 
-        text-align: center;
-        
+
+    .logos img
+    {
+      width: 30vh;
+      height: auto;
     }
 
     /* button div*/
     .button { 
-        grid-area: 5 / 5 / 6 / 7; 
         text-align: center;
     }
     /* style button*/
@@ -435,6 +446,53 @@ section:nth-of-type(even) {
               {
                   color: rgb(110, 146, 204) !important;
               }
+
+              .parent2 {
+
+                display: block !important;
+                width: 100% !important;
+              }
+
+              .opis
+              {
+                width: 100% !important;
+                height: 60% !important;
+                align-items: center !important;
+                justify-content: center !important;
+                display: flex;
+                font-size: inherit !important;
+              }
+
+              .a1
+              {
+                font-size: 4em !important;
+                width: 100% !important;
+              }
+
+              .opis p
+              {
+                font-size: 1.5em !important;
+              }
+
+              .secondpart_about
+              {
+                width: 100% !important;
+                height: 30% !important;
+              }
+
+              .logos:nth-of-type(1), .logos:nth-of-type(2)
+              {
+                width: 100% !important;
+                display: block !important;
+              }
+
+              .button
+              {
+                width: 100% !important;
+                display: block !important;
+                margin-top: -2em;
+                margin-bottom: 5em;
+              }
           }
     
           #preloader
@@ -448,4 +506,8 @@ section:nth-of-type(even) {
               background-size: 40%;
               top: 0;
               transition: ease-in-out 2s;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
           }

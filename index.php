@@ -17,7 +17,7 @@ include('functions.php');
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
-<body>
+<body ondragstart="return false;" ondrop="return false;">
 <div id="preloader">
 <img src="bitmapa.svg" alt="logo" style="max-width: 38.08vh; max-height: 38.08vh;"  class="preloader">
 <h1>Wczytywanie zawartości...</h1>
@@ -41,7 +41,6 @@ include('functions.php');
 
     });
 </script>
-<div class="scroll-top"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg></div>
     <!--<img src="bitmapa.svg" alt="logo" class="esmo">
     <div class="a1">
         
@@ -60,16 +59,13 @@ include('functions.php');
         <a class="nav-link" href="#contact">Kontakt</a>
         </div>
 </span>
-    <section>
-        <div class="parent1">
-            <div class="header_main">
-            <div class="logo">
-            <img src="bitmapa.svg" alt="logo" style="max-width: 38.08vh; max-height: 38.08vh;">
-            </div>
-            <div class="esmo">eSportowe Mistrzostwa Olsztyna</div>
-            </div>
             <nav class="mainNav">
             <ul class="nav nav-underline">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" id="toTop">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>    
+                </a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#about">O Turnieju</a>
             </li>
@@ -83,19 +79,27 @@ include('functions.php');
                 <a class="nav-link" href="#contact">Kontakt</a>
             </li>
             </ul>
-            </nav>
+            </nav>    
+  <section>
+        <div class="parent1">
+            <div class="header_main">
+            <div class="logo">
+            <img src="bitmapa.svg" alt="logo" style="max-width: 38.08vh; max-height: 38.08vh;">
+            </div>
+            <div class="esmo">eSportowe Mistrzostwa Olsztyna</div>
+            </div>
             <div class="arrow_place"><img src="arrow.svg" alt="arrow" class="arrow"></div>
         </div>
     </section>
     <section>
         <div class="parent2" id="about">
-            <div class="a1">O turnieju</div>
             <div class="opis">
-                Lorem ipsum dolor sit amet, 
+            <div class="a1">O turnieju</div>
+                <p>Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit. Donec vitae lectus tempus mauris 
                 blandit viverra ut a ligula. Duis aliquet at mauris non sollicitudin. 
                 Quisque molestie tempor enim, fringilla bibendum orci feugiat sit amet. 
-                Curabitur rhoncus commodo tortor sit amet rutrum.
+                Curabitur rhoncus commodo tortor sit amet rutrum.</p>
                 
                 
                 <!-- DO WYMUSZENIA WCZYTANIA PRELOADERA
@@ -104,13 +108,12 @@ include('functions.php');
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
                 </div>
-            <div class="logo1"> 
-                <img src="oga.svg" alt="logo_oga" style="max-width: 350px; max-height: 350px;"> 
-            </div>
-            <div class="logo2">
-                <img src="lo11.svg" alt="logo_XILO" style="max-width: 320px; max-height: 320px;">
-
-            </div>
+            <div class="secondpart_about">
+            <div class="logos"> 
+                <img src="oga.svg" alt="logo_oga">
+           </div>
+           <div class="logos">     
+                <img src="lo11.svg" alt="logo_XILO">
             <div class="button">
                 <!--<button type="button" class="butt">Zapisz się!</button>-->
                 <div class="wrapper">
@@ -129,6 +132,8 @@ include('functions.php');
                   </div>
             </div>
         </div>
+        </div>
+        </div>
     </section>
     <section>
         <p>fedu</p>
@@ -136,15 +141,15 @@ include('functions.php');
 
 
 <!-- MODALS (wyskakujące okienka) -->
-<div class="modal fade" id="registrationInfo" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="registrationInfoLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade modal-lg" id="registrationInfo" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="registrationInfoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" style="font-size: 2em !important;" id="registrationInfoLabel">REJESTRACJA UCZESTNIKÓW</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style="text-align: center;">
-        <p style="text-transform: uppercase">Zapisy do turnieju nie są jeszcze dostępne!</p>
+      <iframe width="1000px" height="500px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=3l6mzPSrwUWA3aEUFyyHdc2MM0aJJSNFkXDi40tF3pNUNkFPWFUyUEZaVzNYMVRaME40RkVLUkFQUC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" style="margin: 0 auto;" data-bs-dismiss="modal">Zamknij</button>
