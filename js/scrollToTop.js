@@ -1,6 +1,13 @@
 const scrollTopBtn = document.querySelector('#toTop');
+const scrollTopBtn2 = document.querySelector('#toTop2');
 
 scrollTopBtn.addEventListener('click', ()=> {
+
+    window.scrollTo(0,0);
+
+});
+
+scrollTopBtn2.addEventListener('click', ()=> {
 
     window.scrollTo(0,0);
 
