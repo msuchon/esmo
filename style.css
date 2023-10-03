@@ -213,7 +213,7 @@ section:nth-of-type(even) {
     /* napis */
     .a1 { 
         box-sizing: border-box;
-        font-size: 3em;
+        font-size: 2.5em;
         padding: 1rem;
         text-align: center;
     }
@@ -221,21 +221,12 @@ section:nth-of-type(even) {
     /* opis */
     .opis { 
           box-sizing: border-box;
+          text-align: center;
           padding: 1rem;
-          text-align: justify;
-          font-size: 1.5em;
-          word-break: break-word;
+          font-size: 2em;
           display: flex;
           flex-direction: column;
           width: 50%;
-    }
-
-    .opis h4
-    {
-      font-size: 1.7rem;
-      color: rgb(0, 55, 147);
-      text-transform: uppercase;
-      text-align: center;
     }
     .secondpart_about
     {
@@ -248,15 +239,13 @@ section:nth-of-type(even) {
     /* zdjecie oga i sql*/
     .logos:nth-of-type(1) { 
       box-sizing: border-box;
-      width: 50%;
       text-align: center;
-      margin-bottom: -10em;
     }
 
     .logos:nth-of-type(2) { 
       box-sizing: border-box;
-      width: 50%;
       text-align: center;
+      margin-top: -1em;
     }
 
     .logos img
@@ -431,6 +420,7 @@ section:nth-of-type(even) {
           justify-content: center;
           align-items: center;
           flex-direction: column;
+          margin-bottom: 2em;
         }
 
         .cards
@@ -450,17 +440,16 @@ section:nth-of-type(even) {
           display: flex;
           justify-content: center;
           align-items: center;
-          border-radius: 50px;
-          margin-top: 1em;
         }
 
         #contact p
         {
           font-size: 1.5em !important;
         }
+
         #insta_card, #fb_card, #dc_card
         {
-        transition: scale(1);
+        transform: scale(1);
         border-radius: 30px;
         border: none;   
         }
@@ -487,7 +476,30 @@ section:nth-of-type(even) {
           background-image: linear-gradient(to bottom right,#7289da, #434e75);
         }
 
+		footer
+		{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      justify-content: center;
+		}
 
+    footer p
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .parent3
+    {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
 
           /* Wersja mobilna */
 
@@ -588,11 +600,20 @@ section:nth-of-type(even) {
                 height: 50% !important;
               }
 
-              .logos:nth-of-type(1), .logos:nth-of-type(2)
+              .logos:nth-of-type(1) 
               {
                 width: 100% !important;
                 display: block !important;
+                margin-top: -5em !important;
               }
+                
+              .logos:nth-of-type(2)
+              {
+                width: 100% !important;
+                display: block !important;
+                margin-top: -10em !important;
+              }
+              
 
               .button
               {
@@ -614,37 +635,45 @@ section:nth-of-type(even) {
 
               .cards
               {
-                display: block !important;
+                display: flex !important;
               }
 
               .cards .card
               {
                 margin-right: 0 !important;
                 margin-bottom: 1em !important;
+                transform: scale(0.75)  !important;
               }
 
-              #oTurnieju
+              @keyframes pulseInfinite2 {
+                0%, 100% {
+                  transform: scale(0.75);
+                }
+                50% {
+                  transform: scale(1);
+                }
+              }
+
+              footer
               {
-                display: none !important;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
               }
-
-              #oTurniejuBtn
+          
+              footer p
               {
-                display: flex !important;;
-                justify-content: center !important;;
-                align-items: center !important;;
+                display: flex;
+                align-items: center;
+                justify-content: center;
               }
-          }
 
-          #oTurnieju
-          {
-            display: block;
+              #contact h1 {
+                font-size: 3em;
           }
-
-          #oTurniejuBtn
-          {
-            display: none;
-          }
+        }
     
           #preloader
           {
