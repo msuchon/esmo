@@ -1,6 +1,6 @@
 body{
     background-color: #041024;
-    font-family: 'League Spartan', sans-serif;
+    font-family: 'League Spartan', sans-serif !important;
 }
 
 html, body, section {
@@ -27,47 +27,150 @@ section:nth-of-type(even) {
 
   /* TYTUŁ */
 .parent1 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     }
     
     .logo { 
-
-        grid-area: 2 / 2 / 4 / 3; 
-        justify-items: center;
         padding: 0.2em;
-
+        width: 50%;
+        justify-content: center;
+        align-content: center;
+        display: flex;
     }
     .esmo { 
         box-sizing: border-box;
-        grid-area: 2 / 3 / 4 / 4; 
-        color:#c7c7c7;
+        color: #c7c7c7;
         font-size: 4.5em;
         text-align: left;
         padding: 0.5em;
+        width: 50%;
+    }
 
+    .header_main
+    {
+        width: 60%;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .arrow_place
+    {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
 
     .arrow{
-        grid-area: 4 / 3 / 4 / 4;
         animation: jumpInfinite 2s infinite;
+        width: 5%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
     }
 
     @keyframes jumpInfinite {
-        0% {
-          margin-bottom: 0;
+        0%, 100% {
+          transform: translateY(0);
         }
         50% {
-          margin-bottom: -50px;
+          transform: translateY(-50px);
         }
-        100% {
-          margin-bottom: 0;
-        }
+      }
+
+      /* Navbar */
+      nav.mainNav
+      {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+      }
+
+      nav.mainNav .nav-link
+      {
+        color: #fff !important;
+        font-size: 2em;
+        font-weight: 300;
+        transition: 1s;
+        padding-left: 0.5em !important;
+        padding-right: 0.5em !important;
+        cursor: pointer;
+      }
+
+      nav.mainNav .nav-link:hover
+      {
+        color: #fff !important;
+        font-size: 2em;
+        font-weight: 300;
+        background-image: linear-gradient(to top,rgba(16, 46, 96,0.7) , rgb(4, 16, 36), rgb(4, 16, 36));
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      nav.mainNav ul
+      {
+        padding-bottom: 2em;
+      }
+
+      .menuBtn 
+    {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
     }
+
+    .sideNav
+    {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0%;
+        background-color: rgba(12, 14, 21, 0.95);
+        overflow-x: hidden;
+        transition: 0.5s;
+        display: none;
+        z-index: 100 !important;
+        
+    }
+
+    .sideNav a{
+        font-size: 1.5em !important;
+        text-align: left;
+        font-weight: normal !important;
+        text-transform: uppercase;
+        color: #fff !important;
+        display: block;
+    }
+
+    
+    #closebtn
+    {
+        display: flex;
+        justify-content: right;
+        font-size: 3em !important;
+        color: #fff !important;
+        padding-right: 0.5em;
+        width: 100%;
+    }
+
+    .sideNav #nav_options
+    {
+        text-align: center !important;
+        font-size: 1em !important;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
 /* O TURNIEJU */
 .parent2 {
     display: grid;
@@ -83,6 +186,7 @@ section:nth-of-type(even) {
         grid-area: 2 / 2 / 3 / 4; 
         font-size: 5em;
         padding: 1rem;
+        text-align: center;
     }
 
     /* opis */
@@ -132,6 +236,11 @@ section:nth-of-type(even) {
               box-shadow: 6px 6px 0 black;
               transform: skewX(-15deg);
           }
+
+          .cta span
+          {
+            cursor: pointer;
+          }
           
           .cta:focus {
              outline: none; 
@@ -152,11 +261,11 @@ section:nth-of-type(even) {
               margin-right: 45px;
           }
           
-            span {
+          .cta span {
               transform: skewX(15deg) 
             }
           
-            span:nth-child(2) {
+            .cta span:nth-child(2) {
               width: 20px;
               margin-left: 30px;
               position: relative;
@@ -200,6 +309,106 @@ section:nth-of-type(even) {
               }
               100% {
                   fill: white;
+              }
+          }
+
+        .scroll-top
+        {
+            height: 3.5em;
+            width: 3.5em;
+            background-color: rgba(255,255,255,0.5);
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            transform: scale(0.9);
+            transition: .5s ease-in-out transform;
+        }
+
+        .scroll-top:hover
+        {
+            background-color: rgba(255,255,255,1);
+            transform: scale(1);
+        }
+
+        .scroll-top svg
+        {
+            width: 100%;
+            color: #111;
+            pointer-events: none;
+            text-align: center;
+            font-size: 2.5em;
+            position: relative;
+        }
+
+
+
+
+          /* Wersja mobilna */
+
+          @media only screen and (max-width: 1000px) {
+
+            .header_main {
+                width: 100% !important;
+                flex-direction: column !important;
+              }
+
+              .logo {
+                padding: 0 !important;
+                width: 100% !important;
+                margin-top: 5% !important;
+              }
+
+              .esmo {
+                text-align: center !important;
+                padding: .5em 0 .5em 0 !important;
+                width: 100% !important;
+              }
+
+              .arrow_place {
+                justify-content: center !important;
+                flex-direction: column !important;
+              }
+
+              .arrow {
+                width: 15% !important;
+              }
+            
+              nav
+              {
+                display: none !important;
+              }
+
+              .menuBtn {
+                display: flex;
+                justify-content: left;
+                z-index: 7;
+                position: fixed;
+                padding: 0.5em;
+                flex-direction: column;
+                right: 0;
+            }
+          
+            .menuBtn svg:hover
+            {
+              fill: rgba(16, 46, 96,0.7) !important;
+              transition: 0.5s;
+            }
+
+            .sideNav {
+                display: block !important;
+              }
+          
+              .sideNav a:hover
+              {
+                  color: rgb(110, 146, 204) !important;
               }
           }
     
