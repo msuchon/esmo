@@ -54,7 +54,7 @@ include('functions.php');
         <a href="#" class="closeBtn" id="closebtn"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></a>
         <div id="nav_options" class="nav flex-column nav-underline">
         <img src="bitmapa.svg" alt="logo" style="max-width: 10vh; max-height: 10vh; margin: 0 auto;">
-        <a class="nav-link" id="toTop2">Start</a>
+        <a class="nav-link" href="#about">Start</a>
         <a class="nav-link" href="#about">O Turnieju</a>
         <a class="nav-link" data-bs-toggle="modal" data-bs-target="#registrationInfo">Zapisy</a>
         <a class="nav-link" href="#rules">Regulamin</a>
@@ -96,31 +96,32 @@ include('functions.php');
     <section>
         <div class="parent2" id="about">
             <div class="opis">
-            <div class="a1">O turnieju</div>
-                <div id="oTurnieju">
-                <h4>Witajcie na eSportowych Mistrzostwach Olsztyna!</h4>
+            <div class="a1">Witajcie na eSMO!</div>
                 <p>Cieszymy się, że jesteście z nami na tym ekscytującym wydarzeniu e-sportowym, które organizowane jest przez uczniów, dla uczniów. To nie tylko pierwszy turniej w grze CS2 w naszym regionie, ale także świetna okazja do rywalizacji, zabawy i tworzenia niezapomnianych chwil.</p>
-                <h4>O nas</h4>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="parent2" id="about">
+            <div class="opis">
+            <div class="a1">O nas</div>
                 <p>E-sport zyskuje coraz większą popularność na całym świecie, a my jesteśmy dumni, że możemy być częścią tej fascynującej społeczności. Nasze mistrzostwa to nie tylko okazja do rywalizacji, ale także możliwość spotkania innych pasjonatów e-sportu oraz podzielenia się swoimi umiejętnościami i doświadczeniem.</p>
-                <h4>Rejestracja</h4>
-                <p>Jeśli jesteście gotowi do podjęcia wyzwania i chcecie wziąć udział w eSportowych Mistrzostwach Olsztyna, nie czekajcie! Rejestracja jest otwarta, a liczba miejsc ograniczona. Zarejestrujcie się klikając przycisk poniżej i przygotujcie się do rywalizacji na najwyższym poziomie.</p>
-                </div>
-
-                <button type="button" id="oTurniejuBtn" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#aboutInfo"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>&nbsp;&nbsp;Przeczytaj o Turnieju</button>
-                
-                
-                <!-- DO WYMUSZENIA WCZYTANIA PRELOADERA
-                    
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                </div>
-            <div class="secondpart_about">
-            <div class="logos"> 
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="parent2" id="about">
+            <div class="opis">
+            <div class="a1">Rejestracja</div>
+                <p>Jeśli jesteście gotowi do podjęcia wyzwania i chcecie wziąć udział w eSportowych Mistrzostwach Olsztyna, nie czekajcie! Rejestracja jest otwarta, a liczba miejsc ograniczona. Zarejestrujcie się klikając przycisk i przygotujcie się do rywalizacji na najwyższym poziomie.</p>
+		</div>
+		<div class="secondpart_about">
+			<!--<div class="logos"> 
                 <img src="oga.svg" alt="logo_oga">
-           </div>
-           <div class="logos">     
+			</div>
+			<div class="logos">     
                 <img src="lo11.svg" alt="logo_XILO">
+			</div>-->
             <div class="button">
                 <!--<button type="button" class="butt">Zapisz się!</button>-->
                 <div class="wrapper">
@@ -139,9 +140,8 @@ include('functions.php');
                   </div>
             </div>
         </div>
-        </div>
-        </div>
     </section>
+
     <section>
     <div class="media">
     <h1>Zobacz Teaser</h1>
@@ -161,8 +161,9 @@ include('functions.php');
   </video>
     </div>
     </section>
-    <section>
-        <div id="contact">
+    
+	<section>
+      <div id="contact">
         <h1>Bądźmy w kontakcie.</h1>
         <p>odwiedź nasze social media</p>
       <div class="cards">
@@ -192,8 +193,21 @@ include('functions.php');
       </div>
       </a>
       </div>
-      <a href="https://youtu.be/ezvfuqd0ZiM?si=IW48_Nqf7FCwQGay?autoplay=1&rel=0"><p style="bottom: -262px; position: relative; display: flex; justify-content: center; align-items: center; font-size: 1em !important; color: #041024; text-transform: uppercase;">polityka prywatności</p></a>
-      </div>
+      <!--<a href="https://youtu.be/ezvfuqd0ZiM?si=IW48_Nqf7FCwQGay?autoplay=1&rel=0"><p style="bottom: -262px; position: relative; display: flex; justify-content: center; align-items: center; font-size: 1em !important; color: #041024; text-transform: uppercase;">polityka prywatności</p></a>-->
+		<div id="footer">
+			<div>
+				Organizatorzy:
+				<div> 
+					<img src="oga.svg" alt="logo_oga">
+				</div>
+				<div>     
+					<img src="lo11.svg" alt="logo_XILO">
+				</div>
+			</div>
+			Sponsorzy:
+			
+		</div>
+	  </div>
   </section>
 
 
@@ -214,32 +228,6 @@ include('functions.php');
     </div>
   </div>
 </div>
-
-
-<div class="modal fade modal-lg" id="aboutInfo" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="aboutInfoLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" style="font-size: 2em !important;" id="aboutInfoLabel">O TURNIEJU</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" style="text-align: justify;">
-      <h4><center>Witajcie na eSportowych Mistrzostwach Olsztyna!</center></h4>
-                <p>Cieszymy się, że jesteście z nami na tym ekscytującym wydarzeniu e-sportowym, które organizowane jest przez uczniów, dla uczniów. To nie tylko pierwszy turniej w grze CS2 w naszym regionie, ale także świetna okazja do rywalizacji, zabawy i tworzenia niezapomnianych chwil.</p>
-                <h4>O nas</h4>
-                <p>E-sport zyskuje coraz większą popularność na całym świecie, a my jesteśmy dumni, że możemy być częścią tej fascynującej społeczności. Nasze mistrzostwa to nie tylko okazja do rywalizacji, ale także możliwość spotkania innych pasjonatów e-sportu oraz podzielenia się swoimi umiejętnościami i doświadczeniem.</p>
-                <h4>Rejestracja</h4>
-                <p>Jeśli jesteście gotowi do podjęcia wyzwania i chcecie wziąć udział w eSportowych Mistrzostwach Olsztyna, nie czekajcie! Rejestracja jest otwarta, a liczba miejsc ograniczona. Zarejestrujcie się klikając przycisk poniżej i przygotujcie się do rywalizacji na najwyższym poziomie.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" style="margin: 0 auto;" data-bs-dismiss="modal">Zamknij</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script  src="js/scrollToTop.js"></script>
