@@ -18,6 +18,10 @@ include('functions.php');
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
+<div id="preloader">
+<img src="bitmapa.svg" alt="logo" style="max-width: 38.08vh; max-height: 38.08vh;"  class="preloader">
+<h1>Wczytywanie zawartości...</h1>
+</div>
 <script>
     
     $(document).ready(function (){
@@ -92,6 +96,13 @@ include('functions.php');
                 blandit viverra ut a ligula. Duis aliquet at mauris non sollicitudin. 
                 Quisque molestie tempor enim, fringilla bibendum orci feugiat sit amet. 
                 Curabitur rhoncus commodo tortor sit amet rutrum.
+                
+                
+                <!-- DO WYMUSZENIA WCZYTANIA PRELOADERA
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/SDF_n_jipSE?si=pw7PJEMMkjk311pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
                 </div>
             <div class="logo1"> 
                 <img src="oga.svg" alt="logo_oga" style="max-width: 350px; max-height: 350px;"> 
@@ -144,5 +155,19 @@ include('functions.php');
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script  src="js/scrollToTop.js"></script>
+
+<script>
+
+	var loader = document.getElementById("preloader");
+
+	window.addEventListener("load", function () {
+
+		loader.style.display = "none";
+
+	});
+
+
+</script>
+
 </body>
 </html>
